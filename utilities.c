@@ -106,3 +106,36 @@ char *_strdup(char *str)
 	dup_str[idx] = '\0';
 	return (dup_str);
 }
+
+/**
+  * _atoi - Convert a string to an integer.
+  * @s: The pointer to convert
+  *
+  * Return: A integer
+  */
+int _atoi(char *s)
+{
+	int min = 1, isi = 0, pos = 0;
+	unsigned int ni = 0;
+
+	while (s[pos])
+	{
+		if (s[pos] == '-')
+			min *= -1;
+
+		while (s[pos] >= '0' && s[pos] <= '9')
+		{
+			isi = 1;
+			ni = (ni * 10) + (s[pos] - '0');
+			pos++;
+		}
+
+		if (isi == 1)
+			break;
+
+		pos++;
+	}
+
+	ni *= min;
+	return (ni);
+}
