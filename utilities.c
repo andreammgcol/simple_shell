@@ -23,3 +23,19 @@ char *_strcat(char *dest, char *src)
 	dest[dlen] = '\0';
 	return (dest);
 }
+
+/**
+  * _strlen - Counts the length of a string
+  * @s: The string to counts
+  *
+  * Return: The length of a string
+  */
+int _strlen(const char *s)
+{
+	int i = 0;
+
+	while (s[i])
+		i++;
+
+	return (i);
+}
