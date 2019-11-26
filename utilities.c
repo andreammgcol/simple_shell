@@ -77,3 +77,32 @@ int _strcmp(char *s1, char *s2)
 
 	return (diff);
 }
+
+/**
+  * _strdup - Duplicate a string
+  * @str: the string to duplicate
+  *
+  * Return: the string duplicated
+  */
+char *_strdup(char *str)
+{
+	int idx = 0, len = 1;
+	char *dup_str;
+
+	if (str == NULL)
+		return (NULL);
+
+	len = _strlen(str);
+	dup_str = malloc((sizeof(char) * len) + 1);
+	if (dup_str == NULL)
+		return (NULL);
+
+	while (idx < len)
+	{
+		dup_str[idx] = str[idx];
+		idx++;
+	}
+
+	dup_str[idx] = '\0';
+	return (dup_str);
+}
