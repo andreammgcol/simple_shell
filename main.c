@@ -30,12 +30,10 @@ int main(void)
 		{
 			u_tokns = tokenize(line, " \t", w_len);
 			execFlag = execBuiltInCommands(u_tokns, line);
-
 			if (!execFlag)
 			{
 				u_tokns[0] = find(u_tokns[0]);
-
-				if (u_tokns[0])
+				if (u_tokns[0] && access(u_tokns[0], X_OK) == 0)
 					exec(u_tokns[0], u_tokns);
 				else
 					perror("./hsh");
