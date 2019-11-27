@@ -5,6 +5,8 @@
 #include <unistd.h>
 #include <signal.h>
 
+extern char **environ;
+
 char *_strcat(char *dest, char *src);
 int _strlen(const char *s);
 int _strcmp(char *s1, char *s2);
