@@ -5,6 +5,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <signal.h>
+#include <stdio.h>
 
 extern char **environ;
 
@@ -21,5 +22,9 @@ char *remove_new_line(char *str);
 void signal_handler(int sig_id);
 void _open_help(void);
 void _print_env(void);
+void _handle_exit(char **u_tokns, char *line);
+int execBuiltInCommands(char **u_tokns, char *line);
+void frees_get_env(char *env_path);
+void frees_tokens(char **tokns);
 
 #endif
