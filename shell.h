@@ -3,6 +3,7 @@
 
 #include <stdlib.h>
 #include <unistd.h>
+#include <signal.h>
 
 char *_strcat(char *dest, char *src);
 int _strlen(const char *s);
@@ -14,5 +15,6 @@ void _puts(char *str);
 int count_input(char *str);
 int count_delims(char *str, char *del);
 char *remove_new_line(char *str);
+void signal_handler(int sig_id);
 
 #endif
