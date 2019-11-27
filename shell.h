@@ -12,5 +12,6 @@ int _atoi(char *s);
 int _putchar(char c);
 void _puts(char *str);
 int count_input(char *str);
+int count_delims(char *str, char *del);
 
 #endif
