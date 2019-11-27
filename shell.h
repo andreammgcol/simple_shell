@@ -11,5 +11,6 @@ char *_strdup(char *str);
 int _atoi(char *s);
 int _putchar(char c);
 void _puts(char *str);
+int count_input(char *str);
 
 #endif
