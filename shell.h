@@ -3,6 +3,7 @@
 
 #include <stdlib.h>
 #include <unistd.h>
+#include <signal.h>
 
 char *_strcat(char *dest, char *src);
 int _strlen(const char *s);
