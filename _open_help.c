@@ -7,11 +7,5 @@
  */
 void _open_help(void)
 {
-	_puts("\n***WELCOME TO THE SHELL HELP***"
-		"\nList of Commands supported:"
-		"\n>cd"
-		"\n>ls"
-		"\n>pwd"
-		"\n>cat"
-		"\n>exit");
+	_puts("\n***WELCOME TO THE SHELL HELP***\n");
 }
