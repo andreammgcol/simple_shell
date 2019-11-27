@@ -10,7 +10,7 @@
 int execBuiltInCommands(char **u_tokns, char *line)
 {
 	int i = 0;
-	char *ListBuiltinCmds[] = { "exit", "cd", "help", "env", NULL };
+	char *ListBuiltinCmds[] = { "exit", "cd", "help", NULL };
 
 	while (ListBuiltinCmds[i])
 	{
@@ -26,8 +26,6 @@ int execBuiltInCommands(char **u_tokns, char *line)
 				case 2:
 					_open_help();
 					return (1);
-				case 3:
-					_print_env();
 				default:
 					break;
 			}

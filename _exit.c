@@ -18,7 +18,7 @@ void _handle_exit(char **u_tokns, char *line)
 		exit(0);
 	}
 	status = _atoi(u_tokns[1]);
-	if (status > 0 && status <= 255)
+	if (status != 0)
 	{
 		frees_tokens(u_tokns);
 		free(line);
