@@ -19,7 +19,7 @@ finally you can run our Shell writing:
 ```sh
 ./hsh
 ```
-### Output Example
+### Output Examples
 ```sh
 vagrant@vagrant-ubuntu-trusty-64:~/simple_shell$ ./hsh
 ($) ls -l
@@ -37,6 +37,28 @@ drwxrwxr-x 3 vagrant vagrant  4096 Nov 26 01:42 concepts
 -rw-rw-r-- 1 vagrant vagrant   253 Nov 26 01:42 signal_handler.c
 -rw-rw-r-- 1 vagrant vagrant   606 Nov 26 01:42 tokenize.c
 -rw-rw-r-- 1 vagrant vagrant  1041 Nov 26 01:42 utilities.c
+($)
+```
+```sh
+Holbertons-iMac-9:simple_shell holberton$ ./hsh 
+($) pwd
+/Users/holberton/simple_shell
+```
+```sh
+($) cat signal_handler.c
+#include "shell.h"
+
+/**
+  * signal_handler - Handles the signals
+  * @sig_id: The identifier of the signal to handle
+  *
+  * Return: Nothing to returns
+  */
+void signal_handler(int sig_id)
+{
+	if (sig_id == SIGINT)
+		write(STDOUT_FILENO, "\n($) ", 5);
+}
 ($)
 ```
 
