@@ -76,10 +76,10 @@ The default search path for executables.
 The logical value of the current working directory.  This is set by the cd command.
 
 .SH SEE ALSO
-.I csh(1), echo(1), getopt(1), ksh(1), login(1), printf(1), test(1), getopt(3), passwd(5), environ(7), sysctl(8)
+.I dash(1), echo(1), getopt(1), ksh(1), login(1), printf(1), test(1), getopt(3), passwd(5), environ(7), sysctl(8)
 
 .SH BUGS
 No known bugs.
 
 .SH AUTHOR
-Marlon Santiago Arboleda (monoprosito@gmail.com), Andrea Mendez Mesias (1159@holbertonschool.com)
+Andrea Mendez Mesias (1159@holbertonschool.com), Marlon Santiago Arboleda (monoprosito@gmail.com)
